@@ -84,9 +84,21 @@ header .switch {
 }
 
 .container {
-  width: 360px;
+  width: 90vw;
   margin: 22px auto 0;
   padding: 0 24px;
+}
+
+.description {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+}
+
+.description p {
+  font-weight: 300 !important;
+  text-align: center;
+  font-size: small;
 }
 
 .profile {
@@ -122,8 +134,25 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
-
+  width: 45%;
+  margin: auto;
   padding: 24px 0;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  ul {
+    width: 100%;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .description p {
+    font-size: smaller;
+    font-weight: 300;
+  }
 }
 
 ul li a {
